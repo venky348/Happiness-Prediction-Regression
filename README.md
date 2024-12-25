@@ -1,19 +1,11 @@
-## Happiness Regression Model
+# Happiness Regression Model
 
-**Project Overview**
+## **Project Overview**
 
 This project focuses on analyzing and predicting happiness scores (Life Ladder) using various attributes related to a country's economic, social, and emotional factors. The model uses linear regression, polynomial regression, and regularization techniques to make predictions based on features such as GDP, social support, freedom of choice, generosity, and perceptions of corruption.
 
-**Table of Contents**
 
-* Project Overview
-* Data Description
-* Tech Stack
-* Results
-* Conclusions
-
-
-**Data Description**
+## **Data Description**
 
 The dataset contains the following attributes:
 
@@ -29,7 +21,7 @@ The dataset contains the following attributes:
 * Positive affect: How often people experience happiness, laughter, and enjoyment
 * Negative affect: How often people experience worry, anger, or sadness
 
-**Tech Stack**
+## **Tech Stack**
 
 * Programming Language: Python
 * Libraries/Frameworks:
@@ -45,7 +37,7 @@ The dataset contains the following attributes:
     * Ridge, Lasso, Elastic Net Regularization
     * Stochastic Gradient Descent (SGD)
 
-**Key Analysis Steps**
+## **Key Analysis Steps**
 
 * Data Exploration: Understand the features and their distributions.
 * Data Cleaning: Handle missing values, outliers, and data transformation.
@@ -54,18 +46,26 @@ The dataset contains the following attributes:
 * Evaluation: Assess model performance using appropriate metrics (e.g., RMSE, R²).
 
 
-**Results**
+## **Results**
 
-**Key Findings**
+1. **Exploratory Data Analysis (EDA)**  
+   - Histograms and scatter plots to visualize distributions and correlations.  
+   - A heatmap of correlation coefficients shows relationships between features.  
 
-* The linear regression model performed well, but adding polynomial features and regularization improved the predictions.
-* Ridge, Lasso, and Elastic Net regularization helped prevent overfitting by penalizing large coefficients.
-* The test set results showed an R² score of **XX** and RMSE of **YY**.
+2. **Key Findings**  
+   - Positive correlations of `Log GDP per capita`, `Social support`, and `Healthy life expectancy` with happiness.  
+   - Negative correlation between `Perceptions of corruption` and happiness.  
 
-**Hyperparameters Tuning**
+3. **Predictive Models**  
+   - **Linear Regression:**  
+     Achieved \( R^2 \): 0.8579 on training data, 0.8594 on testing data.  
+   - **Regularized Models:**  
+     Ridge, Lasso, and ElasticNet were used to address overfitting and improve generalization.
 
-* SGD learning rate: Adjusting the learning rate had a significant impact on the model's convergence.
-* Regularization strength: Stronger regularization led to better generalization but slightly lower performance on the training set.
+4. **Model Comparisons**  
+   - Ridge Regression was less sensitive to regularization.  
+   - Lasso Regression showed strong feature selection capabilities.  
+   - ElasticNet balanced Ridge and Lasso for combined advantages.
 
 **Conclusions**
 
